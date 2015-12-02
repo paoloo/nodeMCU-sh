@@ -12,6 +12,7 @@ wget = function(endereco,caminho,saida,porta)
     s:send("GET "..caminho.." HTTP/1.1\r\n"..
            "Host: "..endereco.."\r\n"..
            "Connection: keep-alive\r\n"..
+           "User-Agent: uPNP/1.0\r\n"..
            "Accept-Charset: utf-8\r\n"..
            "Accept: */*\r\n\r\n"
           )
